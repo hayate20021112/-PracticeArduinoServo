@@ -20,12 +20,17 @@ void setup() {
 void loop() {
     if (digitalRead(inPin) == HIGH) {
         sv.write(0);
-        digitalWrite(MotionLED,HIGH);
+        digitalWrite(MotionLED, LOW);
         Serial.print("ServoPosition 0 \n");
-        delay(2500);
-    } else {
+    } else if (digitalRead(inPin) == LOW) {
+        delay(200);
         sv.write(90);
-        digitalWrite(MotionLED,LOW);
+        digitalWrite(MotionLED, HIGH);
         Serial.print("ServoPosition 90 \n");
+        delay(500);
+    } else {
+        sv.write(0);
+        digitalWrite(MotionLED, LOW);
+        Serial.print("ServoPosition 0 \n");
     }
 }
