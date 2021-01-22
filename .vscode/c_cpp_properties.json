@@ -3,6 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
+                "/Users/hayate/Library/Arduino15/packages/esp8266/tools/**",
+                "/Users/hayate/Library/Arduino15/packages/esp8266/hardware/esp8266/2.5.2/**",
                 "/Applications/Arduino.app/Contents/Java/libraries/Servo/src",
                 "/Applications/Arduino.app/Contents/Java/tools/**",
                 "/Users/hayate/Documents/develop/2020/libraries/**",
