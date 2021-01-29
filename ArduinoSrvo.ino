@@ -1,4 +1,5 @@
 #include <Servo.h>          //Servoのライブラリを読み込む
+
 Servo sv;
 const int HIGHinPin = 5;    //第一センサーボード
 const int LOWinPin = 6;     //第二センサーボード
